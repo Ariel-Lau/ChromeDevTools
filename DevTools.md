@@ -36,9 +36,10 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 （1）选中元素，按delete
 （2）`cmd + z`
 
-#### 2.1.5 选中元素 > 右键
-* cut、copy、paste、hide、force state....
-<br>(补图......)
+#### 2.1.5 选中元素 —> 右键
+* Add/Edit Attributes、Edit as HTML、Copy、Hide element、Force state、Scroll into view......
+
+![](assets/elementsrightclick.gif)
 
 #### 2.1.6 技巧
 * 显示和隐藏元素
@@ -568,22 +569,18 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 
 ![](assets/netblockedstyles.png)
 
-## 6 Performance(Timeline) (待补充......)
+## 6 Application 
 
-## 7 Memory (待补充......)
-
-## 8 Application (待补充......)
-
-### 8.1 Storage (待补充......)
+### 6.1 Storage
 * Cookie
 * Local Storage
 * IndexDB
 * Session Storage
   
-## 9 Security
+## 7 Security
 查看页面整体的安全性，Security面板可以调试安全隐患，并确保已在网站上正确实施HTTPS。
 
-### 9.1 `Security Overview` (安全概述)
+### 7.1 `Security Overview` (安全概述)
 从`Security Overview`可以知道页面是否安全。
 安全的页面会显示信息：This page is secure (valid HTTPS)
 
@@ -602,9 +599,7 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 
 ![](assets/securityorigin.gif)
 
-## 10 Audits (待补充......)
-
-## 11 `Device Mode`模拟移动设备
+## 8 `Device Mode`模拟移动设备
 截屏
 
 ![](assets/devicemodescreencut.jpeg)
@@ -615,24 +610,24 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 
 **[获取手百、浏览器等的UA](http://service.spiritsoft.cn/ua.html)**：http://service.spiritsoft.cn/ua.html
 
-## 12 开发者工具的全局配置
+## 9 开发者工具的全局配置
 
-### 12.1 更多More
+### 9.1 更多More
 ![](assets/setdevtools.jpeg)
 
-#### 12.1.1 `Hide console drawer(或按esc)`
+#### 9.1.1 `Hide console drawer(或按esc)`
 * 打开或关闭console抽屉，在各个面板中都可以打开或关闭console抽屉；
 * 点击左侧三个点的icon可以打开其他的抽屉，如网络状况、性能监控等；
 * 拖拽面板可以改变各面板的显示顺序
 
 ![](assets/sethhideconsoledraw.jpeg)
 
-#### 12.1.2 setting —> workspace
+#### 9.1.2 setting —> workspace
 可将DevTools中作出的更改保存到文件系统里，`Add folder`按钮点击可以选择保存文档的目录，所以DevTools也可以作为代码编辑器。
 
 ![](assets/setworkspace.jpeg)
 
-#### 12.1.3 快捷键Shortcuts
+#### 9.1.3 快捷键Shortcuts
 
 ![](assets/setshortcuts.jpeg)
 
@@ -641,11 +636,11 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 
 ![](https://user-gold-cdn.xitu.io/2018/12/18/167c07cf50125757?imageslim)
 
-#### 12.1.4 定位sensors
+#### 9.1.4 定位sensors
 
 ![](assets/setsensors.jpeg)
 
-### 12.2 `Command Menu（cmd + shift + p）`
+### 9.2 `Command Menu（cmd + shift + p）`
 
 * Network conditions: User agent可配置各浏览器各版本的代理，也可以新增代理
 
@@ -659,7 +654,7 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 
 ![](assets/cmdmenuothertype.jpeg)
 
-如果输入 ! 在它的输入框中，就可以根据名字来选择你的代码块。
+如果输入`!`在它的输入框中，就可以根据名字来选择你的代码块。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/29/167f5b6999c09e59?imageslim)
 
@@ -668,14 +663,26 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 (2) 截取完整页面：`Capture full size screenshot`（截取的是整个屏幕的元素，无需在Elements中选中元素）
 (3) 截取当前视图内的页面：`Capture screenshot`（截取的是浏览器当前视图中展示的元素，无需在Elements中选中元素）
 
-* theme切换devtools的主题
+* Search all files：搜索所有资源文件
+在弹出的输入框中输入关键字可以在所有页面引入的资源文件中搜索该关键字，支持正则表达式搜索。
 
-* snippets
+![](assets/commandmenusearch.gif)
+
+* Disable JavaScript：禁用、启用页面JavaScript
+  
+![](assets/commandmenujs.gif)
+
+* Hide HTML Comments：显示、隐藏HTML中的注释
+
+![](assets/commandmenuhtml.gif)
+
+* theme：切换devtools的主题
+* snippets：代码片段
 * sensors
-* search
 * 3g
+* ......
 
-## 13 一些技巧
+## 10 一些技巧
 * DevTools已经支持直接使用await
 
 场景：async/await 使得异步操作变得更加容易和可读，唯一的问题在于await需要在async函数中使用。如果我们要在DevTools的控制台使用，需要一些特殊的处理，使用`Immediately Invoked Async Function Expression (IIAFE)`一点都不方便。
@@ -684,7 +691,7 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 
 参考链接：<https://juejin.im/post/5c0fdfc46fb9a049b13e0d82>
 
-## 13 插件推荐
+## 11 插件推荐
 * FeHelper（WEB前端助手）
 
 ![](assets/pluginFeHelper.jpg)
@@ -696,9 +703,11 @@ Shift + 鼠标指针悬停在Requests表格中的请求上。绿色请求表示�
 ![](assets/pluginNimbus.jpg)
 
 * 掘金
-* Performance-Analyser(网页性能分析)：分析网页加载性能，包括http请求、执行期的时间、http请求文件的大小、占比
 
-![](assets/pluginperformance.png)
-
-## 14 博客、文章推荐
+## 12 文档参考
+* [Chrome DevTools官网](https://developers.google.com/web/tools/chrome-devtools/)
+* [Chrome 开发工具中文文档](https://www.html.cn/doc/chrome-devtools/)
 * [你不知道的Chrome调试工具技巧系列](https://juejin.im/post/5c09a80151882521c81168a2)
+* [chrome开发者工具各种骚技巧](https://juejin.im/post/5af53823f265da0b75282b0f)
+* [CHROME开发者工具的小技巧](https://coolshell.cn/articles/17634.html)
+* [Demo地址](https://googlechrome.github.io/devtools-samples/debug-js/get-started)
