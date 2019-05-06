@@ -33,7 +33,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 ![](https://user-gold-cdn.xitu.io/2018/12/9/16793797bde74b62?imageslim)
 
 * 使用command按钮<br>
-场景：如果只是想在DOM结构中往上一点或者往下一点的移动当前被选中的元素，可以使用`[⌘] + [⬆] / [⌘] + [⬇] `。
+场景：如果只是想在DOM结构中往上一点或者往下一点的移动当前被选中的元素，可以使用`[⌘] + [⬆] / [⌘] + [⬇]`。
 
 #### 2.1.4 删除元素
 （1）选中元素，按delete<br>
@@ -50,7 +50,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](https://user-gold-cdn.xitu.io/2018/12/9/1679379780c11ef3?imageslim)
 
-* 基础编辑器
+* 基础编辑器<br>
 (1) 使用`cmd + z` 撤销我们的任何改动。<br>
 (2) 使用`cmd + shift + z` 重新编辑我们的任何修改。
 
@@ -60,7 +60,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](assets/elementsexpand.gif)
 
-* 快速控制节点的展开与折叠
+* 快速控制节点的展开与折叠<br>
 左键（left）：折叠子元素；<br>
 右键（right）：展开子元素；<br>
 `[⬆]/[⬇]`：上下选择节点；
@@ -133,8 +133,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](https://user-gold-cdn.xitu.io/2018/12/14/167ac17a4194c870?imageslim)
 
-* `Timing function editor`定时函数编辑器（`Cubic bezier`贝塞尔 编辑器）：<br>
-贝塞尔曲线是一串用来定义CSS的动画速度在整个动画过程中如何变化的魔法数值。<br>
+* `Timing function editor`定时函数编辑器（`Cubic bezier`贝塞尔 编辑器）：贝塞尔曲线是一串用来定义CSS的动画速度在整个动画过程中如何变化的魔法数值。<br>
 设置为`transition-timing-function`或者 `animation-timing-function`CSS属性。<br>
 **<span style="color:red">注意</span>**：如果`timing`函数的值没有设置在`trasition`, `animation`简写的形式中，这个符号不会显示出来)边上的曲线符号
 
@@ -143,7 +142,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 #### 2.2.2 如何在`console`面板快速打出相应节点？
 ##### 2.2.2.1 $
 * `$0~$4`：最近选择过的5个DOM节点。`$0`返回最近一次选择的DOM节点(或当前节点)，以此类推，`$1`返回上上次选的DOM节点。最多可保存5个，如果不满5个，则返回undefined。
-* `Store as global variable`：将元素存储为全局变量，保存之后节点的全局变量名为temp1、temp2...以此类推<br>
+* `Store as global variable`：将元素存储为全局变量，保存之后节点的全局变量名为temp1、temp2...以此类推。<br>
 场景：需要多次返回某一个节点
 
 ![](assets/elementsstorasglobalvariable.gif)
@@ -262,7 +261,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 ![](https://user-gold-cdn.xitu.io/2018/12/13/167a484d3824545d?imageslim)
 
 * `console.profile()` 、`console.profileEnd()` ：查看CPU的消耗
-* `console.count()` ：相同的日志当前被打印的次数，比如一个函数被执行的次数。
+* `console.count()` ：相同的日志当前被打印的次数，比如一个函数被执行的次数。<br>
 `console.countRest()`：重置count
 * `console.assert(expression, object)` ：
 assert（断言）：用于保证程序的正确性，只有当express的值为false，则在控制台上打印错误信息。
@@ -276,7 +275,7 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 * 控制台输入`clear()`
 * `ctrl + l`
 * 在控制台中点击右键，然后按`Clear console`
-* JavaScript代码内调用`console.clear()`
+* JavaScript代码内调用`console.clear()`<br>
 **<span style="color:red">注意</span>**：如果勾选了`preserve log`，则`console.clear()`会被禁用，使用无效。
 
 #### 3.4.2 保留历史记录
@@ -292,7 +291,7 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 
 ### 3.5 $
 * `$0~$4`：打出选中的元素，上一次选中的元素，上上次选中的元素...以此类推
-* `$_`：返回最近使用的表达式的结果（对上次执行结果的引用）；如果`$_`表达式是一个数组，则可以用`$_.length`获取数组的长度
+* `$_`：返回最近使用的表达式的结果（对上次执行结果的引用）；<br>如果`$_`表达式是一个数组，则可以用`$_.length`获取数组的长度
 * `$()`: `document.querySelector()`返回第一个与之匹配的css选择器，如`$('div')`返回本页的第一个div元素。
 * `$$()`：`document.querySelectorAll()`返回一个数组，与之匹配的css选择器的元素。如`$$('div')`返回所有的div元素组成的数组
 * `$i`：引入一些npm库
@@ -367,7 +366,7 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 **Tips**：
 `Blackbox a script`：屏蔽无关代码<br>
 （1）场景：假如使用了第三方库、文件，如果你确定你所调试的问题与第三方文件无关，可以开启脚本黑盒的调试方式，开启黑盒调试后调用栈不会出现第三方文件的方法，调试也不会进入到第三方文件的函数中，可以绕过冗长的第三方或更深层次的嵌套，提高调试效率。<br>
-（2）操作：
+（2）操作：<br>
 a. 在已打开的文件中右键 —> `Blackbox a script`<br>
 b. 在`Call Stack`中，右键 -> `Blackbox Script`<br>
 c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackbox黑箱，Disabled阻止执行
@@ -453,7 +452,8 @@ snippets执行脚本
 ![](assets/snippetjs.jpeg)
 
 6. `Overrides`重写<br>
-   场景：在开发工具上调试css/js时，修改的属性值或代码在重新刷新页面时，所有的修改会被重置。如果想把修改的值保存下来，在页面刷新的时候不会被重置，可以使用overrides特性。<br>
+   场景：在开发工具上调试css/js时，修改的属性值或代码在重新刷新页面时，所有的修改会被重置。如果想把修改的值保存下来，在页面刷新的时候不会被重置，可以使用overrides特性。
+
    Overrides默认是关闭的，需手动开启：<br>
    （1）打开Sources面板<br>
    （2）选择Overrides字标签<br>
@@ -588,7 +588,8 @@ snippets执行脚本
 
 ### 5.7 阻塞请求
 （1）`command menu` —> `request blocking` —> +add需要阻塞的请求<br>
-（2）选中一个请求，右击，选中`Blockrequest domain`或`Blockrequest URL`，可分别阻塞该请求所在domain下的所有请求和该请求。<br>
+（2）选中一个请求，右击，选中`Blockrequest domain`或`Blockrequest URL`，可分别阻塞该请求所在domain下的所有请求和该请求。
+
 **红色文字的请求表示已经被阻塞**
 
 ![](assets/netblockedstyles.png)
@@ -616,8 +617,9 @@ snippets执行脚本
 
 ### 6.4 Frames
 将页面上的资源按frame类别进行组织显示
-* top
+* top<br>
 顶级top是一个主文档，在top下面是主文档的Images、Scripts、Stylesheets等资源。
+
 **Tips**：在资源上右击后在弹出菜单选择Reveal in Network Panel，就会跳转到Network面板并定位到该资源的位置。
 
 ![](http://charlie-blog.oss-cn-shanghai.aliyuncs.com/application-frames-1.png)
@@ -673,7 +675,7 @@ Performance面板工具栏从左到右依次为：
 ![](assets/performancenet.jpg)
 
 **`NET`**：每个彩色条代表一个资源，条越长表示检索该资源所花费的时间越长。<br>
-每个条的较亮部分表示等待时间（从请求资源到下载第一个字节之间的时间）；
+每个条的较亮部分表示等待时间（从请求资源到下载第一个字节之间的时间）；<br>
 较暗的部分表示加载时间（下载第一个到最后一个字节之间的时间）；
 
 **`HEAP`**：JS堆栈
@@ -688,14 +690,15 @@ Performance面板工具栏从左到右依次为：
 * JS堆大小或节点大小不断增大的模式，可能存在内存泄漏。
 
 ## 8 Memory
-Memory面板可以查找影响页面性能的内存问题，包括内存泄漏、内存膨胀和频繁的垃圾回收。<br>
+Memory面板可以查找影响页面性能的内存问题，包括内存泄漏、内存膨胀和频繁的垃圾回收。
+
 **内存泄漏**：页面中的错误导致页面随着时间的延长使用的内存未被释放，导致内存使用越来越多。<br>
 **内存膨胀**：页面为达到最佳速度而使用的内存比本应使用的内存多。<br>
 **频繁的垃圾回收**：浏览器在垃圾回收期间，所有脚本执行都将暂停，所以，如果浏览器经常进行垃圾回收，脚本执行就会被频繁暂停，这会导致页面出现延迟或者经常暂停。
 
 ![](assets/memoryoverview.jpg)
 
-工具栏从左到右依次为：
+工具栏从左到右依次为：<br>
 Take heap snapshot（开始堆快照）；<br>
 clear all profiles（清空所有快照数据）；<br>
 Collect garbage（垃圾回收）
