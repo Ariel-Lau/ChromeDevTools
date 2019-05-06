@@ -2,7 +2,7 @@
 
 ## 1 介绍
 
-Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调试的工具。
+Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调试的工具。<br>
 工欲善其事必先利其器，熟练的使用DevTools能够大大提高我们的工作效率。
 
 ## 2 Elements
@@ -54,16 +54,16 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 (1) 使用`cmd + z` 撤销我们的任何改动。
 (2) 使用`cmd + shift + z` 重新编辑我们的任何修改。
 
-![](https://user-gold-cdn.xitu.io/2018/12/9/1679379788863b4e?imageslim)
+![](assets/elementseditor.gif)
 
 * 展开所有子节点：右击节点后选择`expand recursively`（递归展开）
 
-![](https://user-gold-cdn.xitu.io/2018/12/20/167c99eb333a3f6c?imageslim)
+![](assets/elementsexpand.gif)
 
 * 快速控制节点的展开与折叠
-左键（left）：折叠子元素
-右键（right）：展开子元素
-`[⬆]/[⬇]`：上下选择节点
+左键（left）：折叠子元素；
+右键（right）：展开子元素；
+`[⬆]/[⬇]`：上下选择节点；
 
 ###  2.2 DOM样式(CSS)、结构
 
@@ -226,7 +226,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](assets/liveexpress.jpeg)
 
-![](https://user-gold-cdn.xitu.io/2018/12/29/167f82b33009449f?imageslim)
+![](assets/consolefilter.gif)
 
 #### 3.2.5 sidebar(侧边栏)
 ![](assets/siderbar.jpeg)
@@ -376,7 +376,7 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 **`Blackbox a script`&&`call stack`**：调用栈在排查问题时是很有用的，函数的执行有执行上下文，函数由最外层到最内层依次压入栈中，在执行的时候，依次从栈中弹出，这样就可以从最内层沿着链找到最外层，排查错误时也是这个道理。
 有时遇到不知名的错误，可能是调用第三方的，也可能是底层的，总之不是自己写的代码。遇到这种情况就可以尝试用调用栈的方法，沿着链去找源头，不过调用栈中可能混杂了不是自己写的函数，这时候`Blackbox script`就派上用场了。
 
-**ps**： Network表格中的类似调用栈的Initiator也可以结合`Blackbox a script`更快速的定位问题。
+**Tips**： Network表格中的类似调用栈的Initiator也可以结合`Blackbox a script`更快速的定位问题。
 
 ![](https://user-gold-cdn.xitu.io/2019/3/9/1696299b43d863b3?imageslim)
 
@@ -634,7 +634,7 @@ snippets执行脚本
 Performance面板工具栏从左到右依次为：
 `Record(cmd + e)`：开始记录。
 **录制注意事项**：
-* 录制时间尽可能短：例如2s、3s比较便于分析
+* 录制时间尽可能短：例如2s、3s比较便于分析。
 * 禁用浏览器缓存：录制网络操作时，最好从设置窗格或`Network conditions`抽屉窗格中禁用浏览器的缓存。
 * 禁用扩展程序：Chrome扩展程序可能会对应用程序的时间轴录制产生一些不相关的干扰，最好在隐身模式中打开Chrome窗口，或创建新的Chrome用户配置文件，以确保环境没有扩展程序。
 * 避免不必要的操作：避免与要录制和分析的活动无关的操作。
