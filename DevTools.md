@@ -23,20 +23,20 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 ![](assets/domlayer.jpg)
 
 #### 2.1.2 保存编辑、替换内容
-（1）`cmd + Enter`
+（1）`cmd + Enter`<br>
 （2）点击编辑部分之外的地方保存编辑内容
 
 #### 2.1.3 交换元素位置
-* drag拖拽
+* drag拖拽<br>
 场景：当你想要看看页面某部分在DOM树的不同位置将如何显示的时候，只需拖动并且放置它(到指定的位置)
 
 ![](https://user-gold-cdn.xitu.io/2018/12/9/16793797bde74b62?imageslim)
 
-* 使用command按钮
+* 使用command按钮<br>
 场景：如果只是想在DOM结构中往上一点或者往下一点的移动当前被选中的元素，可以使用`[⌘] + [⬆] / [⌘] + [⬇] `。
 
 #### 2.1.4 删除元素
-（1）选中元素，按delete
+（1）选中元素，按delete<br>
 （2）右键 -> Delete element
 
 #### 2.1.5 选中元素 —> 右键
@@ -45,13 +45,13 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 ![](assets/elementsrightclick.gif)
 
 #### 2.1.6 Tips
-* 显示、隐藏元素
+* 显示、隐藏元素<br>
 场景：可以按下'h'来隐藏在元素面板中被你选中的元素，再次按下'h'使它出现。某些时候这是很有用的，例如你想截图，但是又不想里面包含一些敏感信息。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/9/1679379780c11ef3?imageslim)
 
 * 基础编辑器
-(1) 使用`cmd + z` 撤销我们的任何改动。
+(1) 使用`cmd + z` 撤销我们的任何改动。<br>
 (2) 使用`cmd + shift + z` 重新编辑我们的任何修改。
 
 ![](assets/elementseditor.gif)
@@ -61,8 +61,8 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 ![](assets/elementsexpand.gif)
 
 * 快速控制节点的展开与折叠
-左键（left）：折叠子元素；
-右键（right）：展开子元素；
+左键（left）：折叠子元素；<br>
+右键（right）：展开子元素；<br>
 `[⬆]/[⬇]`：上下选择节点；
 
 ###  2.2 DOM样式(CSS)、结构
@@ -71,15 +71,15 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ##### 2.2.1.1 修改、添加、搜索class属性、新增style样式
 * 选中类 > 点击空白 > 输入样式（输入之后按Enter保存样式）
-* color颜色选择器（鼠标点击颜色方块会出现颜色选择器）
+* color颜色选择器（鼠标点击颜色方块会出现颜色选择器）<br>
 改变颜色格式：在颜色预览中用`Shift + Click`，可以在rgba，hsl和hexadecimal（十六进制）这三种格式中切换。
 
 ![](assets/colorpicker.gif)
 
 ![](https://user-gold-cdn.xitu.io/2018/12/12/167a1d2cc62a8d0f?imageslim)
 
-* （1）显示和隐藏css属性;
-（2）引用外部文件样式，点击文件打开source，定位到对应样式；
+* （1）显示和隐藏css属性;<br>
+（2）引用外部文件样式，点击文件打开source，定位到对应样式；<br>
 （3）鼠标hover到三个点icon，可以添加`text-shadow`、`box-shadow`、`color`、`background-color`，点击+icon可以添加新的style样式。
 
 ![](assets/cssproperty.png)
@@ -98,13 +98,13 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](assets/hov.png)
 
-* 在线调伪类样式
+* 在线调伪类样式<br>
 选中a标签 > 右键 > `force element state` > 选择想要调试的伪类，在标签前会出现一个黄色的小圆点，就可以直接调伪类样式了。
 
 ![](assets/atagfake.jpg)
 
 ##### 2.2.1.3 快速同步定位页面视图到选中元素(`Scroll Into View`)
-* 场景：页面视图显示靠底部，选中的dom节点元素在靠上位置。
+场景：页面视图显示靠底部，选中的dom节点元素在靠上位置。<br>
 操作：选中元素 > 右键 > `scroll into view`使视图快速回到dom选中元素位置
 ![](assets/scrollintoview.png)
 
@@ -122,10 +122,10 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](assets/elementssearchnode.jpg)
 
-* 添加属性
-(1) 双击节点元素名称，右边出现空白即可添加属性
+* 添加属性<br>
+(1) 双击节点元素名称，右边出现空白即可添加属性<br>
 (2)选中元素 > 右键 >  `add attributes`
-* 修改元素
+* 修改元素<br>
 (1) 双击节点元素名称，元素名称会被高亮 > 输入新的元素名称
 
 ##### 2.2.1.6 Tips
@@ -133,9 +133,9 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](https://user-gold-cdn.xitu.io/2018/12/14/167ac17a4194c870?imageslim)
 
-* `Timing function editor`定时函数编辑器（`Cubic bezier`贝塞尔 编辑器）：
-贝塞尔曲线是一串用来定义CSS的动画速度在整个动画过程中如何变化的魔法数值。
-设置为`transition-timing-function`或者 `animation-timing-function`CSS属性。
+* `Timing function editor`定时函数编辑器（`Cubic bezier`贝塞尔 编辑器）：<br>
+贝塞尔曲线是一串用来定义CSS的动画速度在整个动画过程中如何变化的魔法数值。<br>
+设置为`transition-timing-function`或者 `animation-timing-function`CSS属性。<br>
 **<span style="color:red">注意</span>**：如果`timing`函数的值没有设置在`trasition`, `animation`简写的形式中，这个符号不会显示出来)边上的曲线符号
 
 ![](https://user-gold-cdn.xitu.io/2018/12/14/167ac1748b45fe3f?imageslim)
@@ -143,14 +143,13 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 #### 2.2.2 如何在`console`面板快速打出相应节点？
 ##### 2.2.2.1 $
 * `$0~$4`：最近选择过的5个DOM节点。`$0`返回最近一次选择的DOM节点(或当前节点)，以此类推，`$1`返回上上次选的DOM节点。最多可保存5个，如果不满5个，则返回undefined。
-* `Store as global variable`：将元素存储为全局变量，保存之后节点的全局变量名为temp1、temp2...以此类推
+* `Store as global variable`：将元素存储为全局变量，保存之后节点的全局变量名为temp1、temp2...以此类推<br>
 场景：需要多次返回某一个节点
 
 ![](assets/elementsstorasglobalvariable.gif)
 
 #### 2.2.3 DOM Breakpoints
 场景：当js修改了DOM节点（如修改节点的属性）时可以给DOM节点打断点来调试。
-
 ![](assets/dombreakpoints.png)
 
 #### 2.2.4 computed窗格
@@ -169,11 +168,11 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 * 通过filter可以过滤/查找某些属性/值（styles、computed...都有这个选项）
 
 #### 2.2.5 检查动画`Animations`
-* 作用：
-（1）检查动画
+* 作用：<br>
+（1）检查动画<br>
 （2）修改动画
-* 打开方式：
-（1）`command menu`，搜索animations打开；
+* 打开方式：<br>
+（1）`command menu`，搜索animations打开；<br>
 （2）或者在styles窗格按animations按钮打开。
 
 #### 2.2.6 `EventListeners`
@@ -217,7 +216,7 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 ![](assets/timestampedconsole.png)
 
 #### 3.2.4 console过滤
-* filter选择过滤不同类型的console信息。
+* filter选择过滤不同类型的console信息。<br>
 日志严重级别：Verbose（冗长）、Info、Warning、Error
 
 ![](assets/loglever.jpeg)
@@ -253,11 +252,11 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 ![](assets/consoledirxml.png)
 
 * `console.trace()`： 可以打出js的函数调用栈
-* `console.time()`、`console.timeEnd()` ：计算一段代码间消耗的时间（监测代码执行时间）
-`console.time()`开启一个计时器；
+* `console.time()`、`console.timeEnd()` ：计算一段代码间消耗的时间（监测代码执行时间）<br>
+`console.time()`开启一个计时器；<br>
 `console.timeEnd()`结束计时并将结果在console中打印出来。
 
-如果想一次记录多件事，可以往这些函数中传入不同的标签值。
+如果想一次记录多件事，可以往这些函数中传入不同的标签值。<br>
 **例如**：`console.time('loading')`, `console.timeEnd('loading')`
 
 ![](https://user-gold-cdn.xitu.io/2018/12/13/167a484d3824545d?imageslim)
@@ -281,7 +280,7 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 **<span style="color:red">注意</span>**：如果勾选了`preserve log`，则`console.clear()`会被禁用，使用无效。
 
 #### 3.4.2 保留历史记录
-* 启用`preserve log`可以在页面刷新或更改之间保留控制台历史记录。
+* 启用`preserve log`可以在页面刷新或更改之间保留控制台历史记录。<br>
 消息将一直存储，直到清空控制台或关闭标签。
 
 ![](assets/preservelog.jpeg)
@@ -315,8 +314,8 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 
 ![](assets/geteventlistener.jpeg)
 
-* `Store as global variable`：
-  场景：如果在console中打印了一堆数据(例如App中计算出来的一个数组)，然后想对这些数据进行其它额外操作（如使用copy）。
+* `Store as global variable`：<br>
+  场景：如果在console中打印了一堆数据(例如App中计算出来的一个数组)，然后想对这些数据进行其它额外操作（如使用copy）。<br>
   操作：将它转换成一个全局变量：右击 —> 选择`Store as global variable`(保存为全局变量)。第一个保存变量会创建一个名为`temp1`的变量，然后是`temp2`等等，这样就可以操作各样的数据，而不用担心他们会被复写。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/7/167874429e8b8f73?imageslim)
@@ -342,19 +341,19 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 ### 4.1 调试
 
 #### 4.1.1 sources面板
-（1）文件导航窗格：列出了页面请求的每个文件；
-（2）代码编辑窗格：在文件导航窗格选择文件后，代码编辑窗格会显示选中文件的内容；
+（1）文件导航窗格：列出了页面请求的每个文件；<br>
+（2）代码编辑窗格：在文件导航窗格选择文件后，代码编辑窗格会显示选中文件的内容；<br>
 （3）js调试窗格：检查页面js的各种工具。
 
 ![](assets/sourcespanel.png)
 
 #### 4.1.2 js调试窗格
-* 调试按钮从左到右：
-1.暂停/继续脚本执行：如果一个函数里有大量代码，但是大部分代码与定位的问题无关，点击该按钮（或者光标放到下一个要执行的断点行然后右键选择`continue to here`可以直接到该行的`debugger`）可用于跳过冗长的代码片段，执行到下一个断点处（与定位问题相关的代码处）。
-2.单步调试（快捷键f10）：不遇到函数，执行下一步；遇到函数，不进入函数，直接执行下一步；
-3.进入函数调试（快捷键f11）：不遇到函数，执行下一步；遇到函数，进入函数执行上下文；
-4.跳出当前函数；
-5.禁止所有的断点，停止任何调试；
+* 调试按钮从左到右：<br>
+1.暂停/继续脚本执行：如果一个函数里有大量代码，但是大部分代码与定位的问题无关，点击该按钮（或者光标放到下一个要执行的断点行然后右键选择`continue to here`可以直接到该行的`debugger`）可用于跳过冗长的代码片段，执行到下一个断点处（与定位问题相关的代码处）。<br>
+2.单步调试（快捷键f10）：不遇到函数，执行下一步；遇到函数，不进入函数，直接执行下一步；<br>
+3.进入函数调试（快捷键f11）：不遇到函数，执行下一步；遇到函数，进入函数执行上下文；<br>
+4.跳出当前函数；<br>
+5.禁止所有的断点，停止任何调试；<br>
 6.程序运行遇到异常时是否中断调试
 
 ![](assets/debugger.png)
@@ -362,21 +361,21 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 ![](assets/sourcespannel2.png)
 
 * `watch`: 调试过程中监听某些变量值的变化
-* `call stack`: 函数调用栈；
+* `call stack`: 函数调用栈；<br>
 拷贝调用栈：右键 —> `copy stack trace`
 
 **Tips**：
-`Blackbox a script`：屏蔽无关代码
-（1）场景：假如使用了第三方库、文件，如果你确定你所调试的问题与第三方文件无关，可以开启脚本黑盒的调试方式，开启黑盒调试后调用栈不会出现第三方文件的方法，调试也不会进入到第三方文件的函数中，可以绕过冗长的第三方或更深层次的嵌套，提高调试效率。
+`Blackbox a script`：屏蔽无关代码<br>
+（1）场景：假如使用了第三方库、文件，如果你确定你所调试的问题与第三方文件无关，可以开启脚本黑盒的调试方式，开启黑盒调试后调用栈不会出现第三方文件的方法，调试也不会进入到第三方文件的函数中，可以绕过冗长的第三方或更深层次的嵌套，提高调试效率。<br>
 （2）操作：
-a. 在已打开的文件中右键 —> `Blackbox a script`
-b. 在`Call Stack`中，右键 -> `Blackbox Script`
+a. 在已打开的文件中右键 —> `Blackbox a script`<br>
+b. 在`Call Stack`中，右键 -> `Blackbox Script`<br>
 c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackbox黑箱，Disabled阻止执行
 
-**`Blackbox a script`&&`call stack`**：调用栈在排查问题时是很有用的，函数的执行有执行上下文，函数由最外层到最内层依次压入栈中，在执行的时候，依次从栈中弹出，这样就可以从最内层沿着链找到最外层，排查错误时也是这个道理。
+**`Blackbox a script`&&`call stack`**：调用栈在排查问题时是很有用的，函数的执行有执行上下文，函数由最外层到最内层依次压入栈中，在执行的时候，依次从栈中弹出，这样就可以从最内层沿着链找到最外层，排查错误时也是这个道理。<br>
 有时遇到不知名的错误，可能是调用第三方的，也可能是底层的，总之不是自己写的代码。遇到这种情况就可以尝试用调用栈的方法，沿着链去找源头，不过调用栈中可能混杂了不是自己写的函数，这时候`Blackbox script`就派上用场了。
 
-**Tips**： Network表格中的类似调用栈的Initiator也可以结合`Blackbox a script`更快速的定位问题。
+**Tips**：Network表格中的类似调用栈的Initiator也可以结合`Blackbox a script`更快速的定位问题。
 
 ![](https://user-gold-cdn.xitu.io/2019/3/9/1696299b43d863b3?imageslim)
 
@@ -384,9 +383,9 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 * `breakpoints`: 设置的断点全部显示在这里，可以快速定位到文件中断点的位置。
 * `XHR/fetch breakpoints`: 发请求的断点，比如可以在发ajax请求中打的断点。
 * `DOM Breakpoints`: js改变dom节点属性、dom节点子节点树、移除dom节点操作时打的断点全部显示在这个窗格。
-* `global listeners`: 全局监听器
-  在浏览器中window是全局对象，所以在`Global Listeners`面板中显示绑定在window对象上的事件监听。
-* `event listener breakpoints`： 事件监听断点，比如鼠标的click事件，键盘keydown事件等。勾选事件前面的单选框即可监听该事件。
+* `global listeners`: 全局监听器<br>
+在浏览器中window是全局对象，所以在`Global Listeners`面板中显示绑定在window对象上的事件监听。
+* `event listener breakpoints`：事件监听断点，比如鼠标的click事件，键盘keydown事件等。勾选事件前面的单选框即可监听该事件。
   
 ### 4.2 断点（`Break points`）
 在代码执行过程中暂停代码，同时检查所有相关的变量的值。
@@ -402,9 +401,9 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 
 #### 4.2.3 条件断点(`Conditional breakpoints`)
 * 场景：有时设置的断点被执行太多次了：比如有一个对200个元素的循环，但我们只对第110次循环的结果感兴趣，或者只对一些满足其他的特殊条件的结果感兴趣，这样的情况下就可以设置一个条件断点。
-* 操作：
-（1）右击行号并且选择`Add conditional breakpoint`(添加条件断点)的选项
-（2）或者右击一个已经设置的断点并且选择`Edit breakpoint`(编辑断点)
+* 操作：<br>
+（1）右击行号并且选择`Add conditional breakpoint`(添加条件断点)的选项<br>
+（2）或者右击一个已经设置的断点并且选择`Edit breakpoint`(编辑断点)<br>
 （3）然后输入一个执行结果为true或者false的表达式（它的值并不需要明确的为true或者false，可以是表达式的结果为true或false）。如果条件满足的话，断点就会暂停代码的执行。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/17/167b94b8f36112b7?imageslim)
@@ -439,8 +438,8 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 
 ![](assets/quickdelete.gif)
 
-4. 多列内容选择 & 匹配相同选项：
-   （1）多列内容选择：按住Alt键，当鼠标箭头变为“+”号后，点击鼠标；
+4. 多列内容选择 & 匹配相同选项：<br>
+   （1）多列内容选择：按住Alt键，当鼠标箭头变为“+”号后，点击鼠标；<br>
    （2）匹配相同选项：选中需要匹配的元素，快捷键`Cmd + D`
 
 ![](assets/mutilinematch.gif)
@@ -453,11 +452,11 @@ snippets执行脚本
 
 ![](assets/snippetjs.jpeg)
 
-6. `Overrides`重写
-   场景：在开发工具上调试css/js时，修改的属性值或代码在重新刷新页面时，所有的修改会被重置。如果想把修改的值保存下来，在页面刷新的时候不会被重置，可以使用overrides特性。
-   Overrides默认是关闭的，需手动开启：
-   （1）打开Sources面板
-   （2）选择Overrides字标签
+6. `Overrides`重写<br>
+   场景：在开发工具上调试css/js时，修改的属性值或代码在重新刷新页面时，所有的修改会被重置。如果想把修改的值保存下来，在页面刷新的时候不会被重置，可以使用overrides特性。<br>
+   Overrides默认是关闭的，需手动开启：<br>
+   （1）打开Sources面板<br>
+   （2）选择Overrides字标签<br>
    （3）选择 `+Select folder for overrides`为Overrides设置一个保存重写属性的目录。
 
 ![](assets/sourcesoverrides.gif)
@@ -506,7 +505,7 @@ snippets执行脚本
 ![](assets/netPreserveLog.jpeg)
 
 #### 5.1.2 `Disable cache`（更改加载行为）
-勾选`Disable cache`复选框可以停用浏览器缓存来模拟首次访问者，即可模拟新用户访问。
+勾选`Disable cache`复选框可以停用浏览器缓存来模拟首次访问者，即可模拟新用户访问。<br>
 在其它面板中停用浏览器缓存：`command menu`打开`Network conditions`抽屉，勾选/取消`Disable cache`复选框。
 
 ![](assets/netdisablecache.jpeg)
@@ -551,9 +550,9 @@ snippets执行脚本
 * Initiator：启动源，发起请求的对象、进程，这些对象或进程包括Parser、Redirect、Script、Other。（鼠标hover到该列可以看到调用堆栈的信息）
 * Size：响应头和响应内容组合的大小
 * Time：请求开始到从响应中接收到最终字节的总时间。
-* Waterfall：瀑布流：各请求相关活动的直观分析图。
-  waitting(TTFB)：请求在接收到服务器返回的第一个字节的等待时间
-  content download：请求下载花费的时间
+* Waterfall：瀑布流：各请求相关活动的直观分析图。<br>
+  waitting(TTFB)：请求在接收到服务器返回的第一个字节的等待时间<br>
+  content download：请求下载花费的时间<br>
   stalled: 请求会因为高优先级请求到达、和目标服务器已经建立了6个TCP连接等原因而阻塞
 
 ![](assets/netwaterfall.jpeg)
@@ -561,7 +560,7 @@ snippets执行脚本
 时间细分阶段各字段表示的意义参考链接：<https://developers.google.com/web/tools/chrome-devtools/network-performance/reference#query-string>
 
 * 对请求进行排序：点击Requests表格中任何列的标题，可以按该列对请求排序。
-* 添加或移除列：右键点击Requests表格的表头，然后选择一个选项以便隐藏或显示此选项。 当前显示的选项旁有复选标记。
+* 添加或移除列：右键点击Requests表格的表头，然后选择一个选项以便隐藏或显示此选项。当前显示的选项旁有复选标记。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/29/167f828279b0b397?imageslim)
 
@@ -588,8 +587,8 @@ snippets执行脚本
 ![](assets/netinitiatorstack.png)
 
 ### 5.7 阻塞请求
-（1）`command menu` —> `request blocking` —> +add需要阻塞的请求
-（2）选中一个请求，右击，选中`Blockrequest domain`或`Blockrequest URL`，可分别阻塞该请求所在domain下的所有请求和该请求。
+（1）`command menu` —> `request blocking` —> +add需要阻塞的请求<br>
+（2）选中一个请求，右击，选中`Blockrequest domain`或`Blockrequest URL`，可分别阻塞该请求所在domain下的所有请求和该请求。<br>
 **红色文字的请求表示已经被阻塞**
 
 ![](assets/netblockedstyles.png)
@@ -632,26 +631,26 @@ snippets执行脚本
 ![](assets/performance.png)
 
 Performance面板工具栏从左到右依次为：
-`Record(cmd + e)`：开始记录。
+`Record(cmd + e)`：开始记录。<br>
 **录制注意事项**：
 * 录制时间尽可能短：例如2s、3s比较便于分析。
 * 禁用浏览器缓存：录制网络操作时，最好从设置窗格或`Network conditions`抽屉窗格中禁用浏览器的缓存。
 * 禁用扩展程序：Chrome扩展程序可能会对应用程序的时间轴录制产生一些不相关的干扰，最好在隐身模式中打开Chrome窗口，或创建新的Chrome用户配置文件，以确保环境没有扩展程序。
-* 避免不必要的操作：避免与要录制和分析的活动无关的操作。
+* 避免不必要的操作：避免与要录制和分析的活动无关的操作。<br>
 **例如**：如果要录制点击登录按钮后发生的事件，不要滚动页面，加载图像等。
 
-`Start profiling and reload page (cmd + [⬆] + e)`：重新载入页面并重新记录性能分析
-`Clear`：清空数据
-`Load profile`：载入分析结果
-`Save profile`：保存分析结果
-`Show recent timeline sessions`：显示最近的性能分析缓存数据
-`Capture screenshots`：捕获页面快照
+`Start profiling and reload page (cmd + [⬆] + e)`：重新载入页面并重新记录性能分析<br>
+`Clear`：清空数据<br>
+`Load profile`：载入分析结果<br>
+`Save profile`：保存分析结果<br>
+`Show recent timeline sessions`：显示最近的性能分析缓存数据<br>
+`Capture screenshots`：捕获页面快照<br>
 * 勾选此选项后在记录性能分析时会每隔一段时间截取一张页面渲染的快照；
 * 将鼠标悬停在Screenshots(屏幕截图)或Overview(概述)窗格上，可以查看整个录制过程中某个点放大的截图；
 * 向左和向右移动鼠标可以模拟录制的动态图。
 
-`Show memory timeline`：显示内存性能分析，记录可视化内存泄漏
-`Collect garbage`：垃圾回收
+`Show memory timeline`：显示内存性能分析，记录可视化内存泄漏<br>
+`Collect garbage`：垃圾回收<br>
 `Capture settings`：捕获设置
 
 ![](assets/performancesetting.jpg)
@@ -668,12 +667,12 @@ Performance面板工具栏从左到右依次为：
 
 **`CPU`**：CPU资源，该区域图表指示哪些类型的事件消耗CPU资源。CPU图表中的各种颜色代表着在这个时间段内CPU在各种处理上所花费的时间，如果某个处理占用了大量的时间，那么这可能就是一个可以找到性能瓶颈的线索。
 
-**<span style="color:red">注意</span>**：CPU图表中的各种颜色与Summary窗格里的颜色是相互对应的。
+**<span style="color:red">注意</span>**：CPU图表中的各种颜色与Summary窗格里的颜色是相互对应的。<br>
 **例如**：</span>图中的黄色区域较大，在summary中可以看到加载js代码比较耗时，比较耗cpu资源，所以性能优化时可以在js加载方面入手。
 
 ![](assets/performancenet.jpg)
 
-**`NET`**：每个彩色条代表一个资源，条越长表示检索该资源所花费的时间越长。
+**`NET`**：每个彩色条代表一个资源，条越长表示检索该资源所花费的时间越长。<br>
 每个条的较亮部分表示等待时间（从请求资源到下载第一个字节之间的时间）；
 较暗的部分表示加载时间（下载第一个到最后一个字节之间的时间）；
 
@@ -689,14 +688,17 @@ Performance面板工具栏从左到右依次为：
 * JS堆大小或节点大小不断增大的模式，可能存在内存泄漏。
 
 ## 8 Memory
-Memory面板可以查找影响页面性能的内存问题，包括内存泄漏、内存膨胀和频繁的垃圾回收。
-**内存泄漏**：页面中的错误导致页面随着时间的延长使用的内存未被释放，导致内存使用越来越多。
-**内存膨胀**：页面为达到最佳速度而使用的内存比本应使用的内存多。
+Memory面板可以查找影响页面性能的内存问题，包括内存泄漏、内存膨胀和频繁的垃圾回收。<br>
+**内存泄漏**：页面中的错误导致页面随着时间的延长使用的内存未被释放，导致内存使用越来越多。<br>
+**内存膨胀**：页面为达到最佳速度而使用的内存比本应使用的内存多。<br>
 **频繁的垃圾回收**：浏览器在垃圾回收期间，所有脚本执行都将暂停，所以，如果浏览器经常进行垃圾回收，脚本执行就会被频繁暂停，这会导致页面出现延迟或者经常暂停。
 
 ![](assets/memoryoverview.jpg)
 
-工具栏从左到右依次为：Take heap snapshot（开始堆快照）；clear all profiles（清空所有快照数据）；Collect garbage（垃圾回收）
+工具栏从左到右依次为：
+Take heap snapshot（开始堆快照）；<br>
+clear all profiles（清空所有快照数据）；<br>
+Collect garbage（垃圾回收）
 
 ### 8.1 Chrome任务管理：实时监视内存使用
 `Shift + Esc` 或者 `More tools > Task manager`打开任务管理器
@@ -707,13 +709,13 @@ Memory面板可以查找影响页面性能的内存问题，包括内存泄漏�
 
 ![](https://developers.google.com/web/tools/chrome-devtools/memory-problems/imgs/js-memory.png)
 
-`Memory`列：原生内存。DOM节点存储在原生内存中，如果此值正在增大，说明正在创建DOM节点。
-`JavaScript Memory`列：JS堆。此列包含两个值，通常关注的值是实时数字（括号中的数字），实时数字表示页面上的对象正在使用的内存量，如果该值在增大，可能是正在创建新对象，或者是现有对象正在增长。
+`Memory`列：原生内存。DOM节点存储在原生内存中，如果此值正在增大，说明正在创建DOM节点。<br>
+`JavaScript Memory`列：JS堆。此列包含两个值，通常关注的值是实时数字（括号中的数字），实时数字表示页面上的对象正在使用的内存量，如果该值在增大，可能是正在创建新对象，或者是现有对象正在增长。<br>
 
 **Tips**：`Memory`或`JavaScript Memory`值频繁上升或下降表示存在频繁的垃圾回收。
 
 ### 8.2 Timeline/Performance：记录可视化内存泄漏
-Timeline可以记录页面在一段时间内的内存使用情况。
+Timeline可以记录页面在一段时间内的内存使用情况。<br>
 **<span style="color:red">注意</span>**：：新版浏览器更名为Performance，如果你在浏览器找不到Timeline，可以看下Performance。
 
 **Tips**：在Timeline记录中，JS堆或节点计数图表频繁上升和下降指示存在频繁的垃圾回收。
@@ -721,7 +723,7 @@ Timeline可以记录页面在一段时间内的内存使用情况。
 具体可以参考Performance面板或者参考[官方文档](https://developers.google.com/web/tools/chrome-devtools/memory-problems/)
 
 ### 8.3 Profiles
-只有页面的DOM树或JS代码不再引用DOM节点时，DOM节点才会被作为垃圾进行回收。
+只有页面的DOM树或JS代码不再引用DOM节点时，DOM节点才会被作为垃圾进行回收。<br>
 如果某个节点已从DOM树移除，但某些JavaScript仍然引用它，则此节点为“已分离”。已分离的DOM节点是内存泄漏的常见原因。
 
 **<span style="color:red">注意</span>**：：新版浏览器在Memory面板左侧有Profiles窗格，老版浏览器直接是Profiles面板。
@@ -731,7 +733,7 @@ Timeline可以记录页面在一段时间内的内存使用情况。
 
 ![](assets/memoryprofiles.jpg)
 
-快照需要一定时间处理和加载，处理完成后可以在左侧窗格选择该快照；
+快照需要一定时间处理和加载，处理完成后可以在左侧窗格选择该快照；<br>
 然后在`Class filter`搜索框中输入Detached，搜索已分离的DOM树：
 
 ![](https://developers.google.com/web/tools/chrome-devtools/memory-problems/imgs/detached-filter.png)
@@ -740,20 +742,20 @@ Timeline可以记录页面在一段时间内的内存使用情况。
 
 ![](https://developers.google.com/web/tools/chrome-devtools/memory-problems/imgs/expanded-detached.png)
 
-**黄色背景节点**：具有JS代码对它们的直接引用；
-**红色背景节点**：没有JS代码的直接引用；
+**黄色背景节点**：具有JS代码对它们的直接引用；<br>
+**红色背景节点**：没有JS代码的直接引用；<br>
 所以，需要重点关注的是黄色背景的节点，在优化代码时可以使黄色节点处于活动状态的时间不长于需要的时间，也需要消除属于黄色节点树的红色节点。
 
 点击黄色节点查看详情，如下图可以看到detachedTree变量正在引用该节点，要解决这一特定的内存泄漏，需要研究使用detachedTree的代码并确保在不需要时，可以移除这段代码对节点的引用。
 
 ![](https://developers.google.com/web/tools/chrome-devtools/memory-problems/imgs/yellow-node.png)
 
-**Allocation instrumentation on timeline**：分配时间线确定JS堆内存泄漏
+**Allocation instrumentation on timeline**：分配时间线确定JS堆内存泄漏<br>
 操作：打开Memory面板 —> 打开Profiles —> Allocation instrumentation on timeline —> start
 
 ![](https://developers.google.com/web/tools/chrome-devtools/memory-problems/imgs/object-details.png)
 
-蓝色竖线：新内存分配，新内存分配可能会存在内存泄漏
+蓝色竖线：新内存分配，新内存分配可能会存在内存泄漏<br>
 通过查看新分配对象的详细信息，从上图可以看到新内存被分配到Window作用域中的x变量。
 
 **Allocation sampling**：按函数调查内存分配
@@ -764,12 +766,12 @@ Timeline可以记录页面在一段时间内的内存使用情况。
 查看页面整体的安全性，Security面板可以调试安全隐患，并确保已在网站上正确实施HTTPS。
 
 ### 9.1 `Security Overview` (安全概述)
-从`Security Overview`可以知道页面是否安全。
+从`Security Overview`可以知道页面是否安全。<br>
 安全的页面会显示信息：This page is secure (valid HTTPS)
 
 ![](assets/securityoverview.jpg)
 
-不安全的网页会显示信息： This page is not secure
+不安全的网页会显示信息： This page is not secure<br>
 如果请求的页面通过HTTP提供，那么main origin被标记为不安全
 
 ![](https://img.php.cn/upload/article/000/000/028/5c3953e0f18e4198.png)
@@ -853,12 +855,12 @@ Timeline可以记录页面在一段时间内的内存使用情况。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/29/167f5b6999c09e59?imageslim)
 
-* 截屏
-(1) 截取页面部分元素：`Capture node screenshot`（截取的是在Elements中选中的元素）
-(2) 截取完整页面：`Capture full size screenshot`（截取的是整个屏幕的元素，无需在Elements中选中元素）
+* 截屏<br>
+(1) 截取页面部分元素：`Capture node screenshot`（截取的是在Elements中选中的元素）<br>
+(2) 截取完整页面：`Capture full size screenshot`（截取的是整个屏幕的元素，无需在Elements中选中元素）<br>
 (3) 截取当前视图内的页面：`Capture screenshot`（截取的是浏览器当前视图中展示的元素，无需在Elements中选中元素）
 
-* Search all files：搜索所有资源文件
+* Search all files：搜索所有资源文件<br>
 在弹出的输入框中输入关键字可以在所有页面引入的资源文件中搜索该关键字，支持正则表达式搜索。
 
 ![](assets/commandmenusearch.gif)
@@ -885,8 +887,8 @@ Timeline可以记录页面在一段时间内的内存使用情况。
 * 全能二维码
 * 掘金
 * EditCookie：可以管理Chrome浏览器中cookies的插件，利用该插件可以添加、删除、编辑、搜索、锁定和屏蔽cookies。
-* OneTab：可以一键释放Chrome标签页内存的插件。
-OneTab插件并不是像关闭浏览器那样直接把所有的标签页都关闭掉，它会先把现有的标签页都缓存起来，然后使用一键关闭所有标签页的功能弹出只有一个恢复窗口的新标签页，在这个OneTab插件的标签页中用户可以选择恢复其中有用的标签页而放弃其他应该关闭的标签页。
+* OneTab：可以一键释放Chrome标签页内存的插件。<br>
+OneTab插件并不是像关闭浏览器那样直接把所有的标签页都关闭掉，它会先把现有的标签页都缓存起来，然后使用一键关闭所有标签页的功能弹出只有一个恢复窗口的新标签页，在这个OneTab插件的标签页中用户可以选择恢复其中有用的标签页而放弃其他应该关闭的标签页。<br>
 在恢复标签页的时候，OneTab插件会以新标签页的方式去恢复，所以用户可以简单地点击几次鼠标都可以把有用的标签都找出来一起恢复，当用户打开的Chrome标签页过多的时候使用OneTab插件大约能够节省用户95%的系统内存，还可以让用户在标签页变小的情况下更加清晰地关注自己应该关注的Chrome标签页。
 
 ![](assets/pluginonetab.jpg)
