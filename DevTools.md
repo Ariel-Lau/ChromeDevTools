@@ -120,6 +120,8 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 ![](assets/editdomnode.png)
 
+* 搜索元素
+
 ![](assets/elementssearchnode.jpg)
 
 * 添加属性<br>
@@ -357,8 +359,6 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 
 ![](assets/debugger.png)
 
-![](assets/sourcespannel2.png)
-
 * `watch`: 调试过程中监听某些变量值的变化
 * `call stack`: 函数调用栈；<br>
 拷贝调用栈：右键 —> `copy stack trace`
@@ -367,7 +367,7 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 `Blackbox a script`：屏蔽无关代码<br>
 （1）场景：假如使用了第三方库、文件，如果你确定你所调试的问题与第三方文件无关，可以开启脚本黑盒的调试方式，开启黑盒调试后调用栈不会出现第三方文件的方法，调试也不会进入到第三方文件的函数中，可以绕过冗长的第三方或更深层次的嵌套，提高调试效率。<br>
 （2）操作：<br>
-a. 在已打开的文件中右键 —> `Blackbox a script`<br>
+a. 在已打开的文件中，右键 —> `Blackbox a script`<br>
 b. 在`Call Stack`中，右键 -> `Blackbox Script`<br>
 c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackbox黑箱，Disabled阻止执行
 
@@ -429,7 +429,7 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 
 ![](assets/sourcespositionline.gif)
 
-1. 快速查找文件&搜索特定字符串
+2. 快速查找文件&搜索特定字符串
 
 ![](assets/quicksearch.jpeg)
 
@@ -466,7 +466,7 @@ snippets执行脚本
 
    ![](assets/sourcecontentscripts.jpg)
 
-8. `corverage`：获取关于冗余代码的摘要-细节信息
+8. `corverage`：获取关于冗余代码的摘要-细节信息<br>
 步骤1: 打开`command menu (command + shift + p)`
 
 ![](assets/corveragestep1.png)
@@ -475,7 +475,7 @@ snippets执行脚本
 
 ![](assets/corveragestep2.png)
 
-步骤3：打开coverage窗格，依次点击start和reload按钮
+步骤3：打开coverage窗格，start开始统计当前加载页面的代码，reload按钮开始统计并重新加载页面
 
 ![](assets/corveragestep3.png)
 
@@ -704,7 +704,7 @@ Memory面板可以查找影响页面性能的内存问题，包括内存泄漏�
 工具栏从左到右依次为：<br>
 Take heap snapshot（开始堆快照）；<br>
 clear all profiles（清空所有快照数据）；<br>
-Collect garbage（垃圾回收）
+Collect garbage（垃圾回收）；
 
 ### 8.1 Chrome任务管理：实时监视内存使用
 `Shift + Esc` 或者 `More tools > Task manager`打开任务管理器
@@ -722,7 +722,7 @@ Collect garbage（垃圾回收）
 
 ### 8.2 Timeline/Performance：记录可视化内存泄漏
 Timeline可以记录页面在一段时间内的内存使用情况。<br>
-**<span style="color:red">注意</span>**：：新版浏览器更名为Performance，如果你在浏览器找不到Timeline，可以看下Performance。
+**<span style="color:red">注意</span>**：新版浏览器更名为Performance，如果你在浏览器找不到Timeline，可以看下Performance。
 
 **Tips**：在Timeline记录中，JS堆或节点计数图表频繁上升和下降指示存在频繁的垃圾回收。
 
