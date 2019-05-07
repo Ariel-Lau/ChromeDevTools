@@ -348,12 +348,12 @@ assert（断言）：用于保证程序的正确性，只有当express的值为f
 
 #### 4.1.2 js调试窗格
 * 调试按钮从左到右：<br>
-1.暂停/继续脚本执行：如果一个函数里有大量代码，但是大部分代码与定位的问题无关，点击该按钮（或者光标放到下一个要执行的断点行然后右键选择`continue to here`可以直接到该行的`debugger`）可用于跳过冗长的代码片段，执行到下一个断点处（与定位问题相关的代码处）。<br>
-2.单步调试（快捷键f10）：不遇到函数，执行下一步；遇到函数，不进入函数，直接执行下一步；<br>
-3.进入函数调试（快捷键f11）：不遇到函数，执行下一步；遇到函数，进入函数执行上下文；<br>
-4.跳出当前函数；<br>
-5.禁止所有的断点，停止任何调试；<br>
-6.程序运行遇到异常时是否中断调试
+1. 暂停/继续脚本执行：如果一个函数里有大量代码，但是大部分代码与定位的问题无关，点击该按钮（或者光标放到下一个要执行的断点行然后右键选择`continue to here`可以直接到该行的`debugger`）可用于跳过冗长的代码片段，执行到下一个断点处（与定位问题相关的代码处）。<br>
+2. 单步调试（快捷键f10）：不遇到函数，执行下一步；遇到函数，不进入函数，直接执行下一步；<br>
+3. 进入函数调试（快捷键f11）：不遇到函数，执行下一步；遇到函数，进入函数执行上下文；<br>
+4. 跳出当前函数；<br>
+5. 禁止所有的断点，停止任何调试；<br>
+6. 程序运行遇到异常时是否中断调试
 
 ![](assets/debugger.png)
 
@@ -381,7 +381,7 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 * `scope`: 作用域链（代码中有闭包时scope窗格关注会多些，比如调试闭包中的this指向）。
 * `breakpoints`: 设置的断点全部显示在这里，可以快速定位到文件中断点的位置。
 * `XHR/fetch breakpoints`: 发请求的断点，比如可以在发ajax请求中打的断点。
-* `DOM Breakpoints`: js改变dom节点属性、dom节点子节点树、移除dom节点操作时打的断点全部显示在这个窗格。
+* `DOM Breakpoints`: js改变dom节点属性、dom节点子节点树改动、移除dom节点操作时打的断点全部显示在这个窗格。
 * `global listeners`: 全局监听器<br>
 在浏览器中window是全局对象，所以在`Global Listeners`面板中显示绑定在window对象上的事件监听。
 * `event listener breakpoints`：事件监听断点，比如鼠标的click事件，键盘keydown事件等。勾选事件前面的单选框即可监听该事件。
@@ -410,7 +410,7 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 参考链接：<https://juejin.im/post/5c16d943518825566d2365f3>
 
 ### 4.3 代码格式化
-* `pretty print` {} 
+* `pretty print` {} ：反压缩js代码
 
 ![](assets/prettypoint.svg)
 
@@ -427,9 +427,9 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 ### 4.6 Tips
 1. `command + p`: 直接定位到某一行。如图，直接定位到第33行第14列。
 
-![](assets/positionline.gif)
+![](assets/sourcespositionline.gif)
 
-2. 快速查找文件&搜索特定字符串
+1. 快速查找文件&搜索特定字符串
 
 ![](assets/quicksearch.jpeg)
 
@@ -438,7 +438,7 @@ c. `Settings` -> `Blockboxing` -> `add pattern`，下拉菜单中，选择Blackb
 ![](assets/quickdelete.gif)
 
 4. 多列内容选择 & 匹配相同选项：<br>
-   （1）多列内容选择：按住Alt键，当鼠标箭头变为“+”号后，点击鼠标；<br>
+   （1）多列内容选择：按住Opt键，当鼠标箭头变为“+”号后，点击鼠标；<br>
    （2）匹配相同选项：选中需要匹配的元素，快捷键`Cmd + D`
 
 ![](assets/mutilinematch.gif)
@@ -505,10 +505,13 @@ snippets执行脚本
 ![](assets/netPreserveLog.jpeg)
 
 #### 5.1.2 `Disable cache`（更改加载行为）
-勾选`Disable cache`复选框可以停用浏览器缓存来模拟首次访问者，即可模拟新用户访问。<br>
-在其它面板中停用浏览器缓存：`command menu`打开`Network conditions`抽屉，勾选/取消`Disable cache`复选框。
+勾选`Disable cache`复选框可以停用浏览器缓存来模拟首次访问者，即可模拟新用户访问。
 
 ![](assets/netdisablecache.jpeg)
+
+在其它面板中停用浏览器缓存：`command menu`打开`Network conditions`抽屉，勾选/取消`Disable cache`复选框。
+
+![](assets/netdrawerdisablecache.gif)
 
 #### 5.1.2 搜索/过滤网络日志：字符串搜索、正在匹配、doamin:*.com域名搜索
 
@@ -530,7 +533,7 @@ snippets执行脚本
 ![](assets/nethidedataurl.jpeg)
 
 #### 5.1.4 查看未压缩资源的大小(`Use Large Request Rows`)
-点击这个icon还可以启动使用大行请求，就是在请求表格展示的每一行高度增加了。
+点击这个icon还可以启动使用大行请求，就是在请求表格展示的每一行高度增加了，每格展示的内容和信息也增加了。
 
 ![](assets/netuselargerrow.jpeg)
 
@@ -831,7 +834,7 @@ Timeline可以记录页面在一段时间内的内存使用情况。<br>
 
 ![](assets/setshortcuts.jpeg)
 
-* 按h键隐藏/显示
+* 按h键隐藏/显示元素
 * `cmd + shift + d`切换devtool的位置（横、竖）
 
 ![](https://user-gold-cdn.xitu.io/2018/12/18/167c07cf50125757?imageslim)
@@ -854,7 +857,7 @@ Timeline可以记录页面在一段时间内的内存使用情况。<br>
 
 ![](assets/cmdmenuothertype.jpeg)
 
-如果输入`!`在它的输入框中，就可以根据名字来选择你的代码块。
+如果输入`!`在它的输入框中，就可以根据名字来选择你的代码块并执行。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/29/167f5b6999c09e59?imageslim)
 
