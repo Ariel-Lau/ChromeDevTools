@@ -11,9 +11,9 @@ Chrome DevTools是内嵌在Chrome浏览器里的一组用于网页制作和调�
 
 #### 2.1.1 元素选择
 
-* 页面鼠标移动到元素 > 右键 > 检查 > 打开开发者工具后自动将鼠标定位的元素选中，背景高亮成蓝色。
 * 点击检查元素icon ![](assets/inspect.png)（快捷键：`command + shift + c`），鼠标在页面中选中元素背景被高亮成蓝色。
 * 打开开发者工具，点击dom树的某个元素节点，选中节点的背景被高亮成蓝色。
+* 页面鼠标移动到元素 > 右键 > 检查 > 打开开发者工具后自动将鼠标定位的元素选中，背景高亮成蓝色。
 * 在console面板中执行`document.querySelector()`，如`document.querySelector('p')`会打印出选中的`<p></p>`元素
 
 ![](assets/elementsselectconsole.jpg)
