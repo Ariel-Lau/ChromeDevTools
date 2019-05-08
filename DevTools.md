@@ -636,7 +636,7 @@ snippets执行脚本
 
 ![](assets/performance.png)
 
-Performance面板工具栏从左到右依次为：
+Performance面板工具栏从左到右依次为：<br>
 `Record(cmd + e)`：开始记录。<br>
 **录制注意事项**：
 * 录制时间尽可能短：例如2s、3s比较便于分析。
@@ -730,8 +730,6 @@ Timeline可以记录页面在一段时间内的内存使用情况。<br>
 具体可以参考Performance面板或者参考[官方文档](https://developers.google.com/web/tools/chrome-devtools/memory-problems/)
 
 ### 8.3 Profiles
-只有页面的DOM树或JS代码不再引用DOM节点时，DOM节点才会被作为垃圾进行回收。<br>
-如果某个节点已从DOM树移除，但某些JavaScript仍然引用它，则此节点为“已分离”。已分离的DOM节点是内存泄漏的常见原因。
 
 **<span style="color:red">注意</span>**：：新版浏览器在Memory面板左侧有Profiles窗格，老版浏览器直接是Profiles面板。
 
@@ -741,7 +739,10 @@ Timeline可以记录页面在一段时间内的内存使用情况。<br>
 ![](assets/memoryprofiles.jpg)
 
 快照需要一定时间处理和加载，处理完成后可以在左侧窗格选择该快照；<br>
-然后在`Class filter`搜索框中输入Detached，搜索已分离的DOM树：
+然后在`Class filter`搜索框中输入Detached，搜索已分离的DOM树：<br>
+
+只有页面的DOM树或JS代码不再引用DOM节点时，DOM节点才会被作为垃圾进行回收。<br>
+如果某个节点已从DOM树移除，但某些JavaScript仍然引用它，则此节点为“已分离”。已分离的DOM节点是内存泄漏的常见原因。
 
 ![](https://developers.google.com/web/tools/chrome-devtools/memory-problems/imgs/detached-filter.png)
 
